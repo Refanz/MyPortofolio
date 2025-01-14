@@ -1,22 +1,22 @@
-import User from "../../../assets/user.png";
+import User from "../../assets/user.png";
 import {HiArrowUpRight, HiPhone} from "react-icons/hi2";
 import {HiMail} from "react-icons/hi";
-import Vector1 from "../../../assets/vector-1.svg";
-import Vector2 from "../../../assets/vector-2.svg";
-import Vector3 from "../../../assets/vector-3.svg";
-import Vector4 from "../../../assets/vector-4.svg";
-import Vector5 from "../../../assets/vector-5.svg";
-import Star from "../../../assets/star.svg";
-import Dots from "../../../assets/dots.svg";
+import Vector1 from "../../assets/vector-1.svg";
+import Vector2 from "../../assets/vector-2.svg";
+import Vector3 from "../../assets/vector-3.svg";
+import Vector4 from "../../assets/vector-4.svg";
+import Vector5 from "../../assets/vector-5.svg";
+import Star from "../../assets/star.svg";
+import Dots from "../../assets/dots.svg";
 import {BiLogoFacebook, BiLogoGithub, BiLogoInstagram} from "react-icons/bi";
 
-function HeroSection() {
+function HeroContent() {
     return (
-        <div className="flex my-28 ml-36 justify-around items-center">
-            <div className="flex flex-col gap-10 w-[545px] relative">
+        <div className="flex my-28 ml-[115px] justify-between mr-5 items-center">
+            <div className="flex flex-col gap-10 max-w-[545px] relative">
                 <img alt="" src={Vector1} className="absolute -z-10 top-[-5px] left-[-30px]"/>
-                <div className="flex flex-col text-[102px] uppercase">
-                    <span className="leading-none">
+                <div className="flex flex-col uppercase">
+                    <span className="leading-none text-[102px]">
                         My Name Is <span className="font-bold">Refan Surya...</span>
                     </span>
                 </div>
@@ -69,4 +69,4 @@ function HeroSection() {
     )
 }
 
-export default HeroSection;
+export default HeroContent;

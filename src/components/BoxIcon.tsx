@@ -1,14 +1,15 @@
 import React from "react";
 
 type Props = {
-    children: React.ReactElement
+    children: React.ReactElement,
+    href: string
 }
 
-function BoxIcon({children}: Props) {
+function BoxIcon({children, href}: Props) {
     return (
-        <span className="flex justify-center items-center size-10 bg-white rounded-full text-black text-3xl">
+        <a href={href} target="_blank" className="flex justify-center items-center size-10 bg-white rounded-full text-black text-3xl">
             {children}
-        </span>
+        </a>
     )
 }
 
